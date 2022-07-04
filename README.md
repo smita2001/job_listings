@@ -1,7 +1,7 @@
 # job_listings
 
-#The Task
-task to build out job listing page and get it looking as close to the design as possible.
+# The Task
+Task to build out job listing page and get it looking as close to the design as possible.
 Using tools: HTML,CSS and JavaSript. 
 Users should be able to:
 
