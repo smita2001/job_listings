@@ -1,0 +1,248 @@
+
+:root{
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+}
+
+
+body{
+padding: 0;
+margin: 0;
+ background-color: rgb(32, 178, 170,0.2);
+   font-family:
+  system-ui,
+  -apple-system, 
+  'Segoe UI',
+  Roboto,
+  Helvetica,
+  Arial,
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji';
+}
+
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgba(90.52499999999999, 164.47499999999997, 164.475, var(--tw-bg-opacity));
+}
+.h-36{
+  height: 9rem;
+}
+
+
+#bottom{
+padding-top: 3%;
+padding-right: 5%;
+padding-left: 5%;
+padding-bottom: 3%;
+ }
+ 
+ .element{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background-color: rgb(255, 255,255);
+  box-shadow: rgb(0, 0, 0,0.5);
+  padding-left: 2%;
+  padding-right: 2%;
+    padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 9px;
+   --tw-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+ }
+
+ .position{
+  width:490px ;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+ }
+
+ .skills{
+  width: 500px ;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 10px;
+ align-items: center;
+ flex-wrap: wrap;
+ }
+
+ button{
+  border-style: none;
+  border-radius: 8px;
+ background-color: rgb(32, 178, 170,0.1);
+ color: rgb(0, 166, 147);
+ font-weight: bolder;
+ font-size: 15px;
+ padding: 10px;
+ margin-bottom: 10px;
+ }
+button:hover{
+ background-color: rgb(0, 166, 147);
+ color: white;
+ cursor: pointer;
+}
+ img{
+  height: 100px;
+ }
+ h3{
+  padding: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+ }
+ h3:hover{
+  color: rgb(0, 166, 147);
+  cursor: pointer;
+ }
+ .company{
+  color: rgb(0, 166, 147);
+  font-weight: bolder;
+ }
+ ul{
+  padding: 0px;
+  margin: 0px;
+  list-style:none;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 10px;
+ }
+.sub_div{
+ width: 400px;
+ display: flex;
+margin: 10px;
+ justify-items: flex-end;
+ flex-direction: column;
+}
+.dot{
+ position: relative;
+ bottom: 4px;
+ font-weight: bolder;
+}
+.new{
+ background-color: rgb(0, 166, 147);
+ color: white;
+ border-radius: 5px;
+ padding: 1px;
+}
+.featured{
+ background-color: black;
+ color: white;
+ border-radius: 5px;
+ padding: 1px;
+}
+
+.search-bar{
+background-color: #fff;
+margin-bottom: 20px;
+width: auto;
+height: auto;
+border-radius: 10px;
+box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+padding: 20px 40px;
+box-sizing: border-box;
+margin-top: -60px;
+display: flex;
+opacity: 0;
+}
+
+.search-bar.show {
+  opacity: 1;
+}
+
+.selected_items{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.filter-tag {
+  display: flex;
+  align-items: center;
+  background: var(--light-grayish-cyan-filter-tablets);
+  border-radius: .25em;
+  overflow: hidden;
+}
+.filter-txt {
+  font-size: .92rem;
+  color: var(--desaturated-dark-cyan);
+  padding: 0 .5em;
+}
+.btn-delete {
+  width: max-content;
+  height: max-content;
+  padding: .5em;
+  background: var(--desaturated-dark-cyan);
+  transition: .2s;
+}
+.clear {
+  color: var(--dark-grayish-cyan);
+  outline: none;
+  border: none;
+  background: none;
+  font-size: .92rem;
+  font-weight: 700;
+  transition: .2s;
+  text-decoration: none;
+}
+.clear:hover {
+  color: var(--desaturated-dark-cyan);
+  text-decoration: underline;
+}
+
+/*----------------Media Queries------------------------*/
+/*---------------tablets and iPads---------------------*/
+
+@media (max-width: 804px){
+
+ .skills{
+  width: 240px;
+  justify-content: flex-start;
+ }
+ .position{
+  width: 390px;
+ }
+}
+
+/*---------------mobile phones-------------------------*/
+
+@media (max-width: 637px){
+ .element{
+  display: block;
+ }
+ .position{
+  width: auto;
+  justify-content: space-evenly;
+ }
+ .skills{
+  width: auto;
+  justify-content: center;
+  margin-top: 10px;
+ }
+ .sub_div{
+  width: 350px;
+ }
+ }
+
+ @media (max-width: 474px){
+  .skills{
+   justify-content: flex-start;
+   margin-top: 20px;
+  }
+  .position{
+   display: block;
+  }
+  img{
+   height: 50px;
+  }
+  .element{
+   width: 100%;
+  }
+ }
