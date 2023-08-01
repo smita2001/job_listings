@@ -49,7 +49,7 @@ function filterTag(tag) {
   // create tag codes
   let filterTagCodes = `
             <h3 class="filter-txt">${tag}</h3>
-            <img src="images/ico-remove.png" alt="" class="btn-delete">`;
+            <img src="images/ico-remove.jpg" alt="" class="btn-delete">`;
   // create element div tag
   const div = document.createElement('div');
   div.classList.add('filter-tag');
